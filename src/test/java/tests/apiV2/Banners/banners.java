@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class banners extends configBaseTestV2 {
 
     @Test
-    public void getBanners(){
+    public void getBannersV2(){
         given().log().all()
                 .headers(
                         "Authorization",

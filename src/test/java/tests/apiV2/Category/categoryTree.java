@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class categoryTree extends configBaseTestV3 {
 
     @Test
-    public void getCategoryTree(){
+    public void getCategoryTreeV2(){
         given().log().all()
                 .headers(
                         "Authorization",

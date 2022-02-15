@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class agreements extends configBaseTestV2 {
 
     @Test
-    public void getAgreements(){
+    public void getAgreementsV2(){
         given().log().all()
                 .headers(
                         "Authorization",

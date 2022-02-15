@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 public class categoryProducts extends configBaseTestV3 {
     int categoryId;
     @Test
-    public void getCategoryProducts(){
+    public void getCategoryProductsV2(){
 
         given().log().all()
                 .headers(

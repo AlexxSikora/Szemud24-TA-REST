@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 public class loginPath extends configBaseTestV2 {
 
     @Test
-    public void SignInWithCorrectData(){
+    public void SignInWithCorrectDataV2(){
         given().log().all()
                 .headers(
                         "Authorization",
@@ -34,7 +34,7 @@ public class loginPath extends configBaseTestV2 {
     }
 
     @Test
-    public void SignInWithIncorrectUserName(){
+    public void SignInWithIncorrectUserNameV2(){
         given().log().all()
                 .headers(
                         "Authorization",
@@ -59,7 +59,7 @@ public class loginPath extends configBaseTestV2 {
     }
 
     @Test
-    public void SignInWithIncorrectPassword(){
+    public void SignInWithIncorrectPasswordV2(){
         given().log().all()
                 .headers(
                         "Authorization",
@@ -84,7 +84,7 @@ public class loginPath extends configBaseTestV2 {
     }
 
     @Test
-    public void SignInWithBlankUserName(){
+    public void SignInWithBlankUserNameV2(){
         given().log().all()
                 .headers(
                         "Authorization",
@@ -109,7 +109,7 @@ public class loginPath extends configBaseTestV2 {
     }
 
     @Test
-    public void SignInWithBlankPassword() {
+    public void SignInWithBlankPasswordV2() {
         given().log().all()
                 .headers(
                         "Authorization",
@@ -134,7 +134,7 @@ public class loginPath extends configBaseTestV2 {
     }
 
     @Test
-    public void SignInWithBlankAccountField() {
+    public void SignInWithBlankAccountFieldV2() {
         given().log().all()
                 .headers(
                         "Authorization",
