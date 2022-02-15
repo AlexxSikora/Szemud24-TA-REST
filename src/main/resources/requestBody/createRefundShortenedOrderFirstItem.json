@@ -1,0 +1,10 @@
+{
+  "clientTransactionId": "{{clientTransactionId}}",
+  "items": [
+    {
+      "id": "2511477",
+      "quantity": 1
+    }
+  ]
+}
+

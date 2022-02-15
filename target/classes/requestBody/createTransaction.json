@@ -1,0 +1,77 @@
+{
+  "clientTransactionId": "197599999",
+  "currency": "PLN",
+  "paymentProvider": "lpp",
+  "paymentMethod": "blik",
+  "items": [
+    {
+      "name": "Elegancka sukienka maxi",
+      "id": "2511477",
+      "type": "item",
+      "quantity": 1,
+      "price": {
+        "gross": 349.99,
+        "net": 284.54,
+        "taxRate": 23
+      }
+    },
+    {
+      "name": "Jeansy slim",
+      "id": "2437391",
+      "type": "item",
+      "quantity": 2,
+      "price": {
+        "gross": 99.99,
+        "net": 81.29,
+        "taxRate": 23
+      }
+    },
+    {
+      "name": "Kurier",
+      "id": "1111",
+      "type": "shipping",
+      "quantity": 1,
+      "price": {
+        "gross": 9.99,
+        "net": 8.13,
+        "taxRate": 23
+      }
+    }
+  ],
+  "shipping": {
+    "personalData": {
+      "firstName": "ezloch",
+      "lastName": "ezloch"
+    },
+    "address": {
+      "street": "ul. Ogrody Długie 12",
+      "city": "Gdańsk",
+      "zipCode": "80-765",
+      "country": "PL"
+    }
+  },
+  "payer": {
+    "personalData": {
+      "firstName": "postman",
+      "lastName": "runner"
+    },
+    "address": {
+      "street": "ul. Ogrody Długie 12",
+      "city": "Gdańsk",
+      "region": "PL",
+      "zipCode": "80-765",
+      "country": "PL"
+    },
+    "identification": {
+      "email": "papay@capture.com",
+      "phone": "500000000",
+      "ip": "127.0.0.1",
+      "vatin": "5831014898",
+      "regon": "190852164"
+    }
+  },
+  "context": {
+    "locale": "pl-pl",
+    "redirectUrl": "https://reserved.com/pl/pl/"
+  }
+}
