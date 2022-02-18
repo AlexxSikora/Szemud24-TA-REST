@@ -21,7 +21,7 @@ public class categoryProducts extends configBaseTestV3 {
                         3)
                 .pathParam("categoryId", "23720")
                 .when()
-                .get("http://mobile-api."+envPath+".lppdev.pl:8981/api/category/{categoryId}/products")
+                .get("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/category/{categoryId}/products")
                 .then()
                 .assertThat()
                 .statusCode(200)

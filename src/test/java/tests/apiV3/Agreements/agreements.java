@@ -18,7 +18,7 @@ public class agreements extends configBaseTestV3 {
                         "x-accept-version",
                         3)
                 .when()
-                .get("http://mobile-api."+envPath+".lppdev.pl:8981/api/agreements")
+                .get("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/agreements")
                 .then()
                 .assertThat()
                 .statusCode(200)

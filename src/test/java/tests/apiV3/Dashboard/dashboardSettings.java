@@ -18,7 +18,7 @@ public class dashboardSettings extends configBaseTestV3 {
                         "x-accept-version",
                         3)
                 .when()
-                .get("http://mobile-api."+envPath+".lppdev.pl:8981/api/dashboard/settings")
+                .get("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/dashboard/settings")
                 .then()
                 .assertThat()
                 .statusCode(200)

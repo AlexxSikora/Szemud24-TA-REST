@@ -22,7 +22,7 @@ public class loginPath extends configBaseTestV2 {
                         "{ \"username\": \"alex.sikora@silkycoders.com\", \"password\": \"test1234\"}"
                 )
                 .when()
-                .post("http://mobile-api."+envPath+".lppdev.pl:8981/api/auth/signIn")
+                .post("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/auth/signIn")
                 .then()
                 .assertThat()
                 .statusCode(200)
@@ -47,7 +47,7 @@ public class loginPath extends configBaseTestV2 {
                         "{ \"username\": \"alex.sikoraa@silkycoders.com\", \"password\": \"test1234\"}"
                 )
                 .when()
-                .post("http://mobile-api.devenv.lppdev.pl:8981/api/auth/signIn")
+                .post("http://mobile-api.devenv.lppdev.pl"+port+"/api/auth/signIn")
                 .then()
                 .assertThat()
                 .statusCode(400)
@@ -72,7 +72,7 @@ public class loginPath extends configBaseTestV2 {
                         "{ \"username\": \"alex.sikora@silkycoders.com\", \"password\": \"test12344\"}"
                 )
                 .when()
-                .post("http://mobile-api.devenv.lppdev.pl:8981/api/auth/signIn")
+                .post("http://mobile-api.devenv.lppdev.pl"+port+"/api/auth/signIn")
                 .then()
                 .assertThat()
                 .statusCode(400)
@@ -97,7 +97,7 @@ public class loginPath extends configBaseTestV2 {
                         "{ \"username\": \"\", \"password\": \"test12344\"}"
                 )
                 .when()
-                .post("http://mobile-api.devenv.lppdev.pl:8981/api/auth/signIn")
+                .post("http://mobile-api.devenv.lppdev.pl"+port+"/api/auth/signIn")
                 .then()
                 .assertThat()
                 .statusCode(401)
@@ -122,7 +122,7 @@ public class loginPath extends configBaseTestV2 {
                         "{ \"username\": \"alex.sikora@silkycoders.com\", \"password\": \"\"}"
                 )
                 .when()
-                .post("http://mobile-api.devenv.lppdev.pl:8981/api/auth/signIn")
+                .post("http://mobile-api.devenv.lppdev.pl"+port+"/api/auth/signIn")
                 .then()
                 .assertThat()
                 .statusCode(400)
@@ -147,7 +147,7 @@ public class loginPath extends configBaseTestV2 {
                         "{ \"username\": \"\", \"password\": \"\"}"
                 )
                 .when()
-                .post("http://mobile-api.devenv.lppdev.pl:8981/api/auth/signIn")
+                .post("http://mobile-api.devenv.lppdev.pl"+port+"/api/auth/signIn")
                 .then()
                 .assertThat()
                 .statusCode(401)

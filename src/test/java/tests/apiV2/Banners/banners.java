@@ -18,7 +18,7 @@ public class banners extends configBaseTestV2 {
                         "x-accept-version",
                         2)
                 .when()
-                .get("http://mobile-api."+envPath+".lppdev.pl:8981/api/banners")
+                .get("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/banners")
                 .then()
                 .assertThat()
                 .statusCode(200)

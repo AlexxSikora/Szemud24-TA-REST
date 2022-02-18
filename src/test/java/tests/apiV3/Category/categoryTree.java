@@ -18,7 +18,7 @@ public class categoryTree extends configBaseTestV3 {
                         "x-accept-version",
                         3)
                 .when()
-                .get("http://mobile-api."+envPath+".lppdev.pl:8981/api/categoryTree")
+                .get("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/categoryTree")
                 .then()
                 .assertThat()
                 .statusCode(200)
