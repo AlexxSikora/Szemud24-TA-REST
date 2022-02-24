@@ -1,16 +1,16 @@
-package tests.apiV3.Category;
+package tests.apiV3.Helpdesk;
 
 import helpers.apiV3.configBaseTestV3;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
-
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
-public class categorySubcategories extends configBaseTestV3 {
+public class helpdeskContactId extends configBaseTestV3 {
 
-    String categoryId = "23720";
+    String helpdeskId = "2";
     @Test
-    public void getSubcategoriesV3(){
+    public void getHelpDeskGeneralV3(){
         given().log().all()
                 .headers(
                         "Authorization",
@@ -19,12 +19,13 @@ public class categorySubcategories extends configBaseTestV3 {
                         "application/json",
                         "x-accept-version",
                         3)
-                .pathParam("categoryId", categoryId)
+                .pathParam("id", helpdeskId)
                 .when()
-                .get("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/category/{categoryId}/subcategories")
+                .get("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/contact/{id}")
                 .then()
                 .assertThat()
                 .statusCode(200)
+                .body("id", equalTo(helpdeskId))
                 .contentType(ContentType.JSON)
                 .log()
                 .all()
@@ -33,8 +34,7 @@ public class categorySubcategories extends configBaseTestV3 {
     }
 
     @Test
-    public void getCategoryProductsWithNoExistentCategoryV3(){
-
+    public void getHelpdeskContactsWithNoExistentIdV3(){
         given().log().all()
                 .headers(
                         "Authorization",
@@ -43,9 +43,9 @@ public class categorySubcategories extends configBaseTestV3 {
                         "application/json",
                         "x-accept-version",
                         3)
-                .pathParam("categoryId", "999999999")
+                .pathParam("id", "999999")
                 .when()
-                .get("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/category/{categoryId}/products")
+                .get("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/contact/{id}")
                 .then()
                 .assertThat()
                 .statusCode(400)
@@ -57,8 +57,7 @@ public class categorySubcategories extends configBaseTestV3 {
     }
 
     @Test
-    public void getCategoryProductsWithoutCategoryIdCategoryV3(){
-
+    public void getHelpdeskContactsWithoutIdV3(){
         given().log().all()
                 .headers(
                         "Authorization",
@@ -67,17 +66,16 @@ public class categorySubcategories extends configBaseTestV3 {
                         "application/json",
                         "x-accept-version",
                         3)
-                .pathParam("categoryId", "")
+                .pathParam("id", "")
                 .when()
-                .get("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/category/{categoryId}/subcategories")
+                .get("http://mobile-api."+envPath+".lppdev.pl"+port+"/api/contact/{id}")
                 .then()
                 .assertThat()
-                .statusCode(404)
+                .statusCode(400)
                 .contentType(ContentType.JSON)
                 .log()
                 .all()
                 .extract()
                 .response();
     }
-
 }

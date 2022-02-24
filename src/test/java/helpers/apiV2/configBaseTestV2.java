@@ -1,12 +1,7 @@
 package helpers.apiV2;
-
+import helpers.configData.configData;
 import static io.restassured.RestAssured.given;
-
-public class configBaseTestV2 {
-
-    int storeId = 1;
-    public String envPath = "devenv";
-    public String port = ":8981";  //only local
+public class configBaseTestV2 extends configData {
 
     String body = "{ \"storeId\":" + storeId + "}";
     public String Token =
