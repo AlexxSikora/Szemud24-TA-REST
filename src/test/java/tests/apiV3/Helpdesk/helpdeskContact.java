@@ -1,15 +1,13 @@
 package tests.apiV3.Helpdesk;
-
 import helpers.apiV3.configBaseTestV3;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
-
 import static io.restassured.RestAssured.given;
 
 public class helpdeskContact extends configBaseTestV3 {
 
     @Test
-    public void getHelpDeskGeneralV3(){
+    public void getHelpDeskContactV3(){
         given().log().all()
                 .headers(
                         "Authorization",

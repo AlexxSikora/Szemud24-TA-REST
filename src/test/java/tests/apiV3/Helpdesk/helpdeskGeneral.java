@@ -1,9 +1,7 @@
 package tests.apiV3.Helpdesk;
-
 import helpers.apiV3.configBaseTestV3;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
-
 import static io.restassured.RestAssured.given;
 
 public class helpdeskGeneral extends configBaseTestV3 {
