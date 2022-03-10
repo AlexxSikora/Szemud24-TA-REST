@@ -1,8 +1,8 @@
-package Enums.Data;
+package Finals.Data;
 
 import org.json.JSONObject;
 
-public class EnumLoginPathData {
+public class LoginPathData {
     public static final String correctLoginDetails = new JSONObject()
             .put("username", "alex.sikora@lppsa.com")
             .put("password", "test1234")

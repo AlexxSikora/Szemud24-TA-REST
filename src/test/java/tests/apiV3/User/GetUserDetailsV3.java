@@ -1,6 +1,5 @@
 package tests.apiV3.User;
 
-import Enums.Data.EnumLoginPathData;
 import Helpers.configData.ConfigData;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
