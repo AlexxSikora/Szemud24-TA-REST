@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import tests.baseTest;
 
 import static io.restassured.RestAssured.given;
-import static tests.baseTest.header;
 
 public class Offers extends baseTest {
     @Test

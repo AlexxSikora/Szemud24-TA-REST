@@ -1,10 +1,13 @@
 package tests;
+
 import finals.AccountDetails.RegistrationAccountDetails;
 import io.restassured.RestAssured;
 import org.apache.http.HttpHeaders;
 import org.junit.jupiter.api.BeforeAll;
+
 import java.io.Serializable;
 import java.util.Map;
+
 import static io.restassured.RestAssured.given;
 
 public class baseTest {

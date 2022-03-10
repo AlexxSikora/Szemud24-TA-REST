@@ -1,10 +1,12 @@
 package tests.Authorization;
+
 import finals.AccountDetails.LoginAccountDetails;
 import finals.EndpointList;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
 import tests.baseTest;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasValue;
 import static org.hamcrest.Matchers.nullValue;
@@ -13,7 +15,7 @@ public class LoginPath extends baseTest {
 
 
     @Test
-    public void correctSignIn(){
+    public void correctSignIn() {
         given()
                 .headers(header())
                 .body(LoginAccountDetails.correctCredentials)
@@ -30,7 +32,7 @@ public class LoginPath extends baseTest {
     }
 
     @Test
-    public void signInEmptyEmailTest(){
+    public void signInEmptyEmailTest() {
         given()
                 .headers(header())
                 .body(LoginAccountDetails.EmptyEmailAcc)

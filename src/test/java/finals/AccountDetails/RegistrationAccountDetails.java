@@ -1,4 +1,5 @@
 package finals.AccountDetails;
+
 import org.json.JSONObject;
 
 public class RegistrationAccountDetails {
