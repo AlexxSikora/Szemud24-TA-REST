@@ -2,7 +2,7 @@ package Enums.Data;
 
 import org.json.JSONObject;
 
-public class Data {
+public class EnumLoginPathData {
     public static final String correctLoginDetails = new JSONObject()
             .put("username", "alex.sikora@lppsa.com")
             .put("password", "test1234")

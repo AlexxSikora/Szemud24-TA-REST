@@ -1,5 +1,5 @@
 package tests.apiV3.Authorization;
-import Enums.Data.Data;
+import Enums.Data.EnumLoginPathData;
 import Helpers.configData.ConfigData;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
@@ -11,7 +11,7 @@ public class LoginPath extends ConfigData {
     public void SignInWithCorrectDataV3(){
         given()
                 .headers(ConfigData.headerV3())
-                .body(Data.correctLoginDetails)
+                .body(EnumLoginPathData.correctLoginDetails)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
@@ -23,14 +23,15 @@ public class LoginPath extends ConfigData {
                 .log()
                 .ifError()
                 .extract()
-                .response();
+                .response()
+                .path("Token");
     }
 
     @Test
     public void SignInWithIncorrectUserNameV3(){
         given()
                 .headers(ConfigData.headerV3())
-                .body(Data.incorrectEmailAcc)
+                .body(EnumLoginPathData.incorrectEmailAcc)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
@@ -49,7 +50,7 @@ public class LoginPath extends ConfigData {
     public void SignInWithIncorrectPasswordV3(){
         given()
                 .headers(ConfigData.headerV3())
-                .body(Data.incorrectPasswordAcc)
+                .body(EnumLoginPathData.incorrectPasswordAcc)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
@@ -68,7 +69,7 @@ public class LoginPath extends ConfigData {
     public void SignInWithBlankUserNameV3(){
         given()
                 .headers(ConfigData.headerV3())
-                .body(Data.blankEmailAcc)
+                .body(EnumLoginPathData.blankEmailAcc)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
@@ -87,7 +88,7 @@ public class LoginPath extends ConfigData {
     public void SignInWithBlankPasswordV3() {
         given()
                 .headers(ConfigData.headerV3())
-                .body(Data.blankPasswordAcc)
+                .body(EnumLoginPathData.blankPasswordAcc)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
@@ -106,7 +107,7 @@ public class LoginPath extends ConfigData {
     public void SignInWithBlankAccountFieldV3() {
         given()
                 .headers(ConfigData.headerV3())
-                .body(Data.blankFullAcc)
+                .body(EnumLoginPathData.blankFullAcc)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
