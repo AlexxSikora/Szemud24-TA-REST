@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public class GetUserDetailsV3 extends ConfigData {
     @Test
     public void getHelpDeskContactV3(){
-        //TBD
+        //TBD - valid JWT token needed - actually using a guest token
         given()
                 .headers(ConfigData.headerV3())
                 .when()
