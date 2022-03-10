@@ -34,7 +34,7 @@ public class ConfigData {
                     .then().assertThat().statusCode(200).extract().path("token");
 
     public static String TOKEN_V2 =
-            given().contentType("application/json").body(AUTH_BODY).header("x-accept-version", 3)
+            given().contentType("application/json").body(AUTH_BODY).header("x-accept-version", 2)
                     .when().post("http://mobile-api." + ENV_PATH + ".lppdev.pl" + PORT + "/api/auth/authorize")
                     .then().assertThat().statusCode(200).extract().path("token");
 }
