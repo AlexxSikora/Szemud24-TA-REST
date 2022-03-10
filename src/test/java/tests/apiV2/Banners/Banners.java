@@ -1,5 +1,5 @@
 package tests.apiV2.Banners;
-import helpers.configData.ConfigData;
+import Helpers.configData.ConfigData;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 

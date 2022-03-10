@@ -1,5 +1,5 @@
 package tests.apiV2.Agreements;
-import helpers.configData.ConfigData;
+import Helpers.configData.ConfigData;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;

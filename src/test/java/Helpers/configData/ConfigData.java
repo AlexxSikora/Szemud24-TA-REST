@@ -1,4 +1,4 @@
-package helpers.configData;
+package Helpers.configData;
 
 import java.util.HashMap;
 import java.util.Map;

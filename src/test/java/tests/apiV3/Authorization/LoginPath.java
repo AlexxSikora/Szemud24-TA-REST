@@ -1,5 +1,6 @@
 package tests.apiV3.Authorization;
-import helpers.configData.ConfigData;
+import Enums.Data.Data;
+import Helpers.configData.ConfigData;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
@@ -10,9 +11,7 @@ public class LoginPath extends ConfigData {
     public void SignInWithCorrectDataV3(){
         given()
                 .headers(ConfigData.headerV3())
-                .body(
-                        "{ \"username\": \"alex.sikora@lppsa.com\", \"password\": \"test1234\"}"
-                )
+                .body(Data.correctLoginDetails)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
@@ -31,9 +30,7 @@ public class LoginPath extends ConfigData {
     public void SignInWithIncorrectUserNameV3(){
         given()
                 .headers(ConfigData.headerV3())
-                .body(
-                        "{ \"username\": \"alex.sikoraa@lppsa.com\", \"password\": \"test1234\"}"
-                )
+                .body(Data.incorrectEmailAcc)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
@@ -52,9 +49,7 @@ public class LoginPath extends ConfigData {
     public void SignInWithIncorrectPasswordV3(){
         given()
                 .headers(ConfigData.headerV3())
-                .body(
-                        "{ \"username\": \"alex.sikora@lppsa.com\", \"password\": \"testt1234\"}"
-                )
+                .body(Data.incorrectPasswordAcc)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
@@ -73,9 +68,7 @@ public class LoginPath extends ConfigData {
     public void SignInWithBlankUserNameV3(){
         given()
                 .headers(ConfigData.headerV3())
-                .body(
-                        "{ \"username\": \"\", \"password\": \"testt1234\"}"
-                )
+                .body(Data.blankEmailAcc)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
@@ -94,9 +87,7 @@ public class LoginPath extends ConfigData {
     public void SignInWithBlankPasswordV3() {
         given()
                 .headers(ConfigData.headerV3())
-                .body(
-                        "{ \"username\": \"alex.sikora@lppsa.com\", \"password\": \"\"}"
-                )
+                .body(Data.blankPasswordAcc)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
@@ -115,9 +106,7 @@ public class LoginPath extends ConfigData {
     public void SignInWithBlankAccountFieldV3() {
         given()
                 .headers(ConfigData.headerV3())
-                .body(
-                        "{ \"username\": \"\", \"password\": \"\"}"
-                )
+                .body(Data.blankFullAcc)
                 .when()
                 .post(URL + "/auth/signIn")
                 .then()
