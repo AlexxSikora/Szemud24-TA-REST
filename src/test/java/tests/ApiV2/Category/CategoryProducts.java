@@ -10,7 +10,7 @@ public class CategoryProducts extends ConfigData {
 
         given()
                 .headers(ConfigData.headerV2())
-                .pathParam("categoryId", "28269")
+                .pathParam("categoryId", "3825")
                 .when()
                 .get(URL + "/category/{categoryId}/products")
                 .then()

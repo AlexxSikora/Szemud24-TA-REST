@@ -3,6 +3,7 @@ import Helpers.configData.ConfigData;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.is;
 
 public class GetAllPickupPoints extends ConfigData{
 
@@ -19,8 +20,6 @@ public class GetAllPickupPoints extends ConfigData{
                 .statusCode(200)
                 .contentType(ContentType.JSON)
                 .log()
-                .ifError()
-                .extract()
-                .response();
+                .ifError();
     }
 }

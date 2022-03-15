@@ -20,9 +20,7 @@ public class PickupPointsDPD extends ConfigData{
                 .statusCode(200)
                 .contentType(ContentType.JSON)
                 .log()
-                .ifError()
-                .extract()
-                .response();
+                .ifError();
     }
 }
 
