@@ -3,23 +3,22 @@ import Helpers.configData.ConfigData;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.hasItems;
+import static org.hamcrest.Matchers.*;
 
-public class PickupPointsMeest extends ConfigData{
+public class NewsletterBox extends ConfigData{
 
     @Test
-    public void getMEESTPickupPointsV3(){
+    public void NewsletterBoxV3(){
         given()
                 .headers(ConfigData.headerV3())
-                .queryParam("courier_code", "MEEST")
                 .when()
-                .get(URL + "/pickupPoints")
+                .get(URL + "/newsletter/box")
                 .then()
                 .log()
                 .ifError()
                 .assertThat()
                 .statusCode(200)
-                .body("courierCode", hasItems("MEEST"))
+                .body("$", not(hasValue(nullValue())))
                 .contentType(ContentType.JSON)
                 .log()
                 .ifError();

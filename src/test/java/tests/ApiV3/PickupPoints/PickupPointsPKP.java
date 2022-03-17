@@ -3,6 +3,7 @@ import Helpers.configData.ConfigData;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.hasItems;
 
 public class PickupPointsPKP extends ConfigData{
 
@@ -18,6 +19,7 @@ public class PickupPointsPKP extends ConfigData{
                 .ifError()
                 .assertThat()
                 .statusCode(200)
+                .body("courierCode", hasItems("PKP"))
                 .contentType(ContentType.JSON)
                 .log()
                 .ifError();

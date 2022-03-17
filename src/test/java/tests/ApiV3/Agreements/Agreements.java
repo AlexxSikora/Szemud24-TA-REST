@@ -2,12 +2,13 @@ package tests.ApiV3.Agreements;
 import Helpers.configData.ConfigData;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
+
 import static io.restassured.RestAssured.given;
 public class Agreements extends ConfigData {
 
     @Test
     public void getAgreementsV3(){
-        given()
+            given()
                 .headers(ConfigData.headerV3())
                 .when()
                 .get(URL + "/agreements")
@@ -20,6 +21,6 @@ public class Agreements extends ConfigData {
                 .log()
                 .ifError()
                 .extract()
-                .response();
+                .path("version");
     }
 }
