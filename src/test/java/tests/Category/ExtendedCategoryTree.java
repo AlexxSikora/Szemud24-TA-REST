@@ -1,8 +1,9 @@
 package tests.Category;
 import base.BaseTest;
+import finals.EndpointList;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpStatus;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 
 public class ExtendedCategoryTree extends BaseTest {
@@ -12,7 +13,7 @@ public class ExtendedCategoryTree extends BaseTest {
         given()
                 .headers(BaseTest.headers())
                 .when()
-                .get(URL + "/extendedCategoryTree")
+                .get(EndpointList.EXTENDED_CATEGORY_TREE)
                 .then()
                 .log()
                 .ifError()

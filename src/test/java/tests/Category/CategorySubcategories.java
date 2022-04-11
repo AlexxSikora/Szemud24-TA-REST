@@ -1,8 +1,9 @@
 package tests.Category;
 import base.BaseTest;
+import finals.EndpointList;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpStatus;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 
 public class CategorySubcategories extends BaseTest {
@@ -14,7 +15,7 @@ public class CategorySubcategories extends BaseTest {
                 .headers(BaseTest.headers())
                 .pathParam("categoryId", categoryId)
                 .when()
-                .get(URL + "/category/{categoryId}/subcategories")
+                .get(EndpointList.CATEGORY_SUBCATEGORIES)
                 .then()
                 .log()
                 .ifError()
@@ -34,7 +35,7 @@ public class CategorySubcategories extends BaseTest {
                 .headers(BaseTest.headers())
                 .pathParam("categoryId", "999999999")
                 .when()
-                .get(URL + "/category/{categoryId}/subcategories")
+                .get(EndpointList.CATEGORY_SUBCATEGORIES)
                 .then()
                 .log()
                 .ifError()
@@ -54,7 +55,7 @@ public class CategorySubcategories extends BaseTest {
                 .headers(BaseTest.headers())
                 .pathParam("categoryId", "")
                 .when()
-                .get(URL + "/category/{categoryId}/subcategories")
+                .get(EndpointList.CATEGORY_SUBCATEGORIES)
                 .then()
                 .log()
                 .ifError()

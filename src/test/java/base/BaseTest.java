@@ -16,7 +16,7 @@ public class BaseTest {
     public static int API_VERSION = 3;
 
     @BeforeAll
-    public void init(){
+    public static void init(){
         RestAssured.baseURI = URL;
     }
 
@@ -26,7 +26,7 @@ public class BaseTest {
                     .body(AUTH_BODY)
                     .header("x-accept-version", API_VERSION)
                     .when()
-                    .post("/auth/authorize")
+                    .post(URL + "/auth/authorize")
                     .then()
                     .assertThat()
                     .statusCode(HttpStatus.SC_OK)

@@ -1,8 +1,9 @@
 package tests.Banners;
 import base.BaseTest;
+import finals.EndpointList;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpStatus;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 
 public class Banners extends BaseTest {
@@ -12,7 +13,7 @@ public class Banners extends BaseTest {
             given()
                     .headers(BaseTest.headers())
                     .when()
-                    .get(URL + "/banners")
+                    .get(EndpointList.BANNERS)
                     .then()
                     .log()
                     .ifError()

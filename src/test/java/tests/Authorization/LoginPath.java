@@ -1,9 +1,10 @@
 package tests.Authorization;
 import base.BaseTest;
 import finals.AccountDetails;
+import finals.EndpointList;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpStatus;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 
 public class LoginPath extends BaseTest {
@@ -14,7 +15,7 @@ public class LoginPath extends BaseTest {
                 .headers(BaseTest.headers())
                 .body(AccountDetails.correctLoginDetails)
                 .when()
-                .post(URL + "/auth/signIn")
+                .post(EndpointList.SIGN_IN)
                 .then()
                 .log()
                 .ifError()
@@ -34,7 +35,7 @@ public class LoginPath extends BaseTest {
                 .headers(BaseTest.headers())
                 .body(AccountDetails.incorrectEmailAcc)
                 .when()
-                .post(URL + "/auth/signIn")
+                .post(EndpointList.SIGN_IN)
                 .then()
                 .log()
                 .ifError()
@@ -53,7 +54,7 @@ public class LoginPath extends BaseTest {
                 .headers(BaseTest.headers())
                 .body(AccountDetails.incorrectPasswordAcc)
                 .when()
-                .post(URL + "/auth/signIn")
+                .post(EndpointList.SIGN_IN)
                 .then()
                 .log()
                 .ifError()
@@ -72,7 +73,7 @@ public class LoginPath extends BaseTest {
                 .headers(BaseTest.headers())
                 .body(AccountDetails.EmptyEmailAcc)
                 .when()
-                .post(URL + "/auth/signIn")
+                .post(EndpointList.SIGN_IN)
                 .then()
                 .log()
                 .ifError()
@@ -91,7 +92,7 @@ public class LoginPath extends BaseTest {
                 .headers(BaseTest.headers())
                 .body(AccountDetails.EmptyPasswordAcc)
                 .when()
-                .post(URL + "/auth/signIn")
+                .post(EndpointList.SIGN_IN)
                 .then()
                 .log()
                 .ifError()
@@ -110,7 +111,7 @@ public class LoginPath extends BaseTest {
                 .headers(BaseTest.headers())
                 .body(AccountDetails.allBlankFieldsAcc)
                 .when()
-                .post(URL + "/auth/signIn")
+                .post(EndpointList.SIGN_IN)
                 .then()
                 .log()
                 .ifError()

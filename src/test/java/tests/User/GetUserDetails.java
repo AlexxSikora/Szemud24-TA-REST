@@ -1,9 +1,9 @@
 package tests.User;
 import base.BaseTest;
+import finals.EndpointList;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpStatus;
-import org.testng.annotations.Test;
-
+import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 
 public class GetUserDetails extends BaseTest {
@@ -13,7 +13,7 @@ public class GetUserDetails extends BaseTest {
         given()
                 .headers(BaseTest.headers())
                 .when()
-                .get(URL + "/user")
+                .get(EndpointList.USER)
                 .then()
                 .log()
                 .ifError()
