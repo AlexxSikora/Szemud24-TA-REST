@@ -10,26 +10,6 @@ import static io.restassured.RestAssured.given;
 public class LoginPath extends BaseTest {
 
     @Test
-    public void signInTest(){
-        given()
-                .headers(BaseTest.headers())
-                .body(AccountDetails.correctLoginDetails)
-                .when()
-                .post(EndpointList.SIGN_IN)
-                .then()
-                .log()
-                .ifError()
-                .assertThat()
-                .statusCode(HttpStatus.SC_OK)
-                .contentType(ContentType.JSON)
-                .log()
-                .ifError()
-                .extract()
-                .response()
-                .path("Token");
-    }
-
-    @Test
     public void signInWrongEmailTest(){
         given()
                 .headers(BaseTest.headers())

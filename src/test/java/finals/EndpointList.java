@@ -2,6 +2,7 @@ package finals;
 
 public class EndpointList {
     public static final String AGREEMENTS = "/agreements";
+    public static final String AUTHORIZE = "/auth/authorize";
     public static final String ALGOLIA = "/algolia/searchApiKey";
     public static final String SIGN_IN = "/auth/signIn";
     public static final String BANNERS = "/banners";

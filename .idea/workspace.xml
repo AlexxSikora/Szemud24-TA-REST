@@ -10,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/finals/EndpointList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/finals/EndpointList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Agreements/Agreements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Agreements/Agreements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Algolia/SearchApiKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Algolia/SearchApiKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Authorization/LoginPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Authorization/LoginPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Banners/Banners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Banners/Banners.java" afterDir="false" />
@@ -28,27 +27,19 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Newsletter/NewsletterBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Newsletter/NewsletterBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/PickupPoints/GetAllPickupPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PickupPoints/GetAllPickupPoints.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/User/GetUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/User/GetUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/finals/AccountDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/EndpointList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Agreements/Agreements.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Algolia/SearchApiKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Banners/Banners.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/Bestsellers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/CategoryProducts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/CategorySubcategories.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/CategoryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/ExtendedCategoryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/NewProducts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Dashboard/DashboardSettings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskContact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskContactId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskGeneral.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Lookbook/Lookbook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/PickupPoints/GetAllPickupPoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/EndpointList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/finals/EndpointList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Agreements/Agreements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Agreements/Agreements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/CategoryProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Category/CategoryProducts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskContactId.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskContactId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskGeneral.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskGeneral.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Lookbook/Lookbook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Lookbook/Lookbook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Newsletter/NewsletterBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Newsletter/NewsletterBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/PickupPoints/GetAllPickupPoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/PickupPoints/GetAllPickupPoints.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/PickupPoints/NewsletterBox.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/User/GetUserDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/User/GetUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/User/GetUserDetails.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +84,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ta-rest" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.7389277" />
@@ -120,49 +111,49 @@
       <recent name="helpers.apiV3" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HelpdeskContactId">
-    <configuration name="CategorySubcategories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Agreements.agreementsTest">
+    <configuration name="Agreements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-rest-unit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.Category.*" />
+          <option name="PATTERN" value="tests.Agreements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.Category" />
-      <option name="MAIN_CLASS_NAME" value="tests.Category.CategorySubcategories" />
+      <option name="PACKAGE_NAME" value="tests.Agreements" />
+      <option name="MAIN_CLASS_NAME" value="tests.Agreements.Agreements" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryTree.categoryTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Agreements.agreementsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-rest-unit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.Category.*" />
+          <option name="PATTERN" value="tests.Agreements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.Category" />
-      <option name="MAIN_CLASS_NAME" value="tests.Category.CategoryTree" />
-      <option name="METHOD_NAME" value="categoryTreeTest" />
+      <option name="PACKAGE_NAME" value="tests.Agreements" />
+      <option name="MAIN_CLASS_NAME" value="tests.Agreements.Agreements" />
+      <option name="METHOD_NAME" value="agreementsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DashboardSettings.dashboardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetUserDetails.userDetailsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-rest-unit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.Dashboard.*" />
+          <option name="PATTERN" value="tests.User.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.Dashboard" />
-      <option name="MAIN_CLASS_NAME" value="tests.Dashboard.DashboardSettings" />
-      <option name="METHOD_NAME" value="dashboardTest" />
+      <option name="PACKAGE_NAME" value="tests.User" />
+      <option name="MAIN_CLASS_NAME" value="tests.User.GetUserDetails" />
+      <option name="METHOD_NAME" value="userDetailsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -183,29 +174,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelpdeskContact.contactHelpdeskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="tests in ta-rest-unit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-rest-unit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.Helpdesk.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.Helpdesk" />
-      <option name="MAIN_CLASS_NAME" value="tests.Helpdesk.HelpdeskContact" />
-      <option name="METHOD_NAME" value="contactHelpdeskTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Agreements.agreementsTest" />
+        <item itemvalue="JUnit.GetUserDetails.userDetailsTest" />
+        <item itemvalue="JUnit.Agreements" />
+        <item itemvalue="JUnit.tests in ta-rest-unit" />
         <item itemvalue="JUnit.HelpdeskContactId" />
-        <item itemvalue="JUnit.HelpdeskContact.contactHelpdeskTest" />
-        <item itemvalue="JUnit.DashboardSettings.dashboardTest" />
-        <item itemvalue="JUnit.CategoryTree.categoryTreeTest" />
-        <item itemvalue="JUnit.CategorySubcategories" />
       </list>
     </recent_temporary>
   </component>
