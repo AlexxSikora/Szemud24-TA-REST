@@ -1,0 +1,15 @@
+{
+  "data": {
+    "title": "post testowy",
+    "shortDescription": "opis testowy",
+    "author": "test testowy",
+    "visitorsCount": "",
+    "likes": "",
+    "image": [
+    ],
+    "isImportant": true,
+    "fullDescription": "opis testowy",
+    "slug": "string",
+    "category": "1"
+  }
+}

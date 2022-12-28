@@ -1,76 +1,39 @@
 package tests.Authorization;
-import base.BaseTest;
-import finals.AccountDetails;
+import finals.AccountDetails.LoginAccountDetails;
 import finals.EndpointList;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
+import tests.baseTest;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.hasValue;
+import static org.hamcrest.Matchers.nullValue;
 
-public class LoginPath extends BaseTest {
+public class LoginPath extends baseTest {
+
 
     @Test
-    public void signInWrongEmailTest(){
+    public void correctSignIn(){
         given()
-                .headers(BaseTest.headers())
-                .body(AccountDetails.incorrectEmailAcc)
+                .headers(header())
+                .body(LoginAccountDetails.correctCredentials)
                 .when()
                 .post(EndpointList.SIGN_IN)
                 .then()
                 .log()
                 .ifError()
                 .assertThat()
-                .statusCode(HttpStatus.SC_BAD_REQUEST)
+                .statusCode(HttpStatus.SC_OK)
                 .contentType(ContentType.JSON)
                 .log()
-                .ifError()
-                .extract()
-                .response();
-    }
-
-    @Test
-    public void signInWrongPasswordTest(){
-        given()
-                .headers(BaseTest.headers())
-                .body(AccountDetails.incorrectPasswordAcc)
-                .when()
-                .post(EndpointList.SIGN_IN)
-                .then()
-                .log()
-                .ifError()
-                .assertThat()
-                .statusCode(HttpStatus.SC_BAD_REQUEST)
-                .contentType(ContentType.JSON)
-                .log()
-                .ifError()
-                .extract()
-                .response();
+                .ifError();
     }
 
     @Test
     public void signInEmptyEmailTest(){
         given()
-                .headers(BaseTest.headers())
-                .body(AccountDetails.EmptyEmailAcc)
-                .when()
-                .post(EndpointList.SIGN_IN)
-                .then()
-                .log()
-                .ifError()
-                .assertThat()
-                .statusCode(HttpStatus.SC_UNAUTHORIZED)
-                .contentType(ContentType.JSON)
-                .log()
-                .ifError()
-                .extract()
-                .response();
-    }
-
-    @Test
-    public void signInEmptyPasswordTest() {
-        given()
-                .headers(BaseTest.headers())
-                .body(AccountDetails.EmptyPasswordAcc)
+                .headers(header())
+                .body(LoginAccountDetails.EmptyEmailAcc)
                 .when()
                 .post(EndpointList.SIGN_IN)
                 .then()
@@ -80,27 +43,45 @@ public class LoginPath extends BaseTest {
                 .statusCode(HttpStatus.SC_BAD_REQUEST)
                 .contentType(ContentType.JSON)
                 .log()
-                .ifError()
-                .extract()
-                .response();
+                .ifError();
     }
 
     @Test
-    public void signInEmptyEmailAndPasswordTest() {
+    public void signInEmptyPasswordTest() {
         given()
-                .headers(BaseTest.headers())
-                .body(AccountDetails.allBlankFieldsAcc)
+                .headers(header())
+                .body(LoginAccountDetails.EmptyPasswordAcc)
                 .when()
                 .post(EndpointList.SIGN_IN)
                 .then()
                 .log()
                 .ifError()
                 .assertThat()
-                .statusCode(HttpStatus.SC_UNAUTHORIZED)
+                .statusCode(HttpStatus.SC_BAD_REQUEST)
                 .contentType(ContentType.JSON)
                 .log()
-                .ifError()
-                .extract()
-                .response();
+                .ifError();
     }
+
+    @Test
+    public void signInEmptyEmailAndPasswordTest() {
+        given()
+                .headers(header())
+                .body(LoginAccountDetails.allBlankFieldsAcc)
+                .when()
+                .post(EndpointList.SIGN_IN)
+                .then()
+                .log()
+                .ifError()
+                .assertThat()
+                .statusCode(HttpStatus.SC_BAD_REQUEST)
+                .contentType(ContentType.JSON)
+                .body("$", hasValue(nullValue()))
+                .log()
+                .ifError();
+    }
+
+
 }
+
+

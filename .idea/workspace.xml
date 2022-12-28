@@ -5,41 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="138d30db-7741-4530-aea5-8af97de5850b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostCreation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/finals/AccountDetails/RegistrationAccountDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/finals/Acrticles/Posts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Categories/Categories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Company_Catalogue/Company_Catalogue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Offers/Offers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Posts/Posts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Users/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finals/AccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/finals/AccountDetails/LoginAccountDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/finals/EndpointList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/finals/EndpointList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Algolia/SearchApiKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Algolia/SearchApiKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Agreements/Agreements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Algolia/SearchApiKey.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Authorization/LoginPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Authorization/LoginPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Banners/Banners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Banners/Banners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/Bestsellers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Category/Bestsellers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/CategoryProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Category/CategoryProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/CategorySubcategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Category/CategorySubcategories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/CategoryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Category/CategoryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/ExtendedCategoryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Category/ExtendedCategoryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/NewProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Category/NewProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Dashboard/DashboardSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Dashboard/DashboardSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Helpdesk/HelpdeskContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Helpdesk/HelpdeskContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Helpdesk/HelpdeskContactId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Helpdesk/HelpdeskContactId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Helpdesk/HelpdeskGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Helpdesk/HelpdeskGeneral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Lookbook/Lookbook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Lookbook/Lookbook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Newsletter/NewsletterBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Newsletter/NewsletterBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/PickupPoints/GetAllPickupPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PickupPoints/GetAllPickupPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/User/GetUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/User/GetUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Banners/Banners.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/Bestsellers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/CategoryProducts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/CategorySubcategories.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/CategoryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/ExtendedCategoryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Category/NewProducts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Dashboard/DashboardSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Helpdesk/HelpdeskContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Helpdesk/HelpdeskContactId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Helpdesk/HelpdeskGeneral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Lookbook/Lookbook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Newsletter/NewsletterBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/PickupPoints/GetAllPickupPoints.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/User/GetUserDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/finals/AccountDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/EndpointList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/finals/EndpointList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Agreements/Agreements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Agreements/Agreements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/CategoryProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Category/CategoryProducts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskContactId.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskContactId.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskGeneral.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskGeneral.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Lookbook/Lookbook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Lookbook/Lookbook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Newsletter/NewsletterBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Newsletter/NewsletterBox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/PickupPoints/GetAllPickupPoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/PickupPoints/GetAllPickupPoints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/PickupPoints/NewsletterBox.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/User/GetUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/User/GetUserDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/EndpointList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Agreements/Agreements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Algolia/SearchApiKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Banners/Banners.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/Bestsellers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/CategoryProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/CategorySubcategories.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/CategoryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/ExtendedCategoryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Category/NewProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Dashboard/DashboardSettings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskContact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskContactId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Helpdesk/HelpdeskGeneral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Lookbook/Lookbook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Newsletter/NewsletterBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/PickupPoints/GetAllPickupPoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/User/GetUserDetails.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +88,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="22rZ4gpJzPAom6yYvLRce8zoGCR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -88,7 +109,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.7389277" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -97,6 +118,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/tests/apiV2/Category" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alex\Desktop\Szemud24-TA-Rest" />
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
@@ -111,27 +133,12 @@
       <recent name="helpers.apiV3" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Agreements.agreementsTest">
-    <configuration name="Agreements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ta-rest-unit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.Agreements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.Agreements" />
-      <option name="MAIN_CLASS_NAME" value="tests.Agreements.Agreements" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.tests in Szemud24-TA-Rest">
     <configuration name="Agreements.agreementsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ta-rest-unit" />
+      <module name="Szemud24-TA-Rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.Agreements.*" />
+          <option name="PATTERN" value="tests.Agreements.Agreements" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,39 +150,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetUserDetails.userDetailsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ta-rest-unit" />
+    <configuration name="Categories.AllCategories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.User.*" />
+          <option name="PATTERN" value="tests.Categories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.User" />
-      <option name="MAIN_CLASS_NAME" value="tests.User.GetUserDetails" />
-      <option name="METHOD_NAME" value="userDetailsTest" />
+      <option name="PACKAGE_NAME" value="tests.Categories" />
+      <option name="MAIN_CLASS_NAME" value="tests.Categories.Categories" />
+      <option name="METHOD_NAME" value="AllCategories" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelpdeskContactId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ta-rest-unit" />
+    <configuration name="LoginPath.correctSignIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.Helpdesk.*" />
+          <option name="PATTERN" value="tests.Authorization.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.Helpdesk" />
-      <option name="MAIN_CLASS_NAME" value="tests.Helpdesk.HelpdeskContactId" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="tests.Authorization" />
+      <option name="MAIN_CLASS_NAME" value="tests.Authorization.LoginPath" />
+      <option name="METHOD_NAME" value="correctSignIn" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tests in ta-rest-unit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ta-rest-unit" />
+    <configuration name="Posts.SpecificPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.Posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.Posts" />
+      <option name="MAIN_CLASS_NAME" value="tests.Posts.Posts" />
+      <option name="METHOD_NAME" value="SpecificPost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Posts.postCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.Posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.Posts" />
+      <option name="MAIN_CLASS_NAME" value="tests.Posts.Posts" />
+      <option name="METHOD_NAME" value="postCreation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tests in Szemud24-TA-Rest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -190,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Agreements.agreementsTest" />
-        <item itemvalue="JUnit.GetUserDetails.userDetailsTest" />
-        <item itemvalue="JUnit.Agreements" />
-        <item itemvalue="JUnit.tests in ta-rest-unit" />
-        <item itemvalue="JUnit.HelpdeskContactId" />
+        <item itemvalue="JUnit.tests in Szemud24-TA-Rest" />
+        <item itemvalue="JUnit.LoginPath.correctSignIn" />
+        <item itemvalue="JUnit.Categories.AllCategories" />
+        <item itemvalue="JUnit.Posts.postCreation" />
+        <item itemvalue="JUnit.Posts.SpecificPost" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +263,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
